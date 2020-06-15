@@ -3,17 +3,17 @@
 const express = require("express");
 const session = require('express-session');
 const bodyParser = require('body-parser');
-// const helmet = require('helmet');
-// const cors = require('cors');
+const helmet = require('helmet');
+const cors = require('cors');
 
 const app = express();
 
 const apiRoutes = require("./routes/api.js");
 
-// app.use(helmet.frameguard());
-// app.use(helmet.dnsPrefetchControl());
-// app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
-//app.use(cors({origin: '*'}));
+app.use(helmet.frameguard());
+app.use(helmet.dnsPrefetchControl());
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
+app.use(cors({origin: '*'}));
 
 app.use(express.static("public"));
 
