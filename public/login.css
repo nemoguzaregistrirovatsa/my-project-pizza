@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  text-decoration: none;
+  user-select: none;
+  outline: 0;
+}
+
+*:hover {
+  cursor: default;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+    
+  background: url(https://cdn.glitch.com/672d97f9-93aa-4751-99e9-65b1de06a2f2%2Ftable_image.jpg?v=1591698150381);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  
+  font-family: "Raleway", sans-serif;
+}
+
+#main-nav {
+  background-color: hsla(0, 50%, 50%, 0);
+  
+  text-align: right;
+}
+
+#log-in-button-a {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+  padding: 5px 10px;
+  background-color: hsla(45, 50%, 100%, 0.9);
+  
+  font-size: 18px;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase ;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+section {
+  margin: auto;
+  background-color: hsla(30, 100%, 50%, 0)
+}
+
+.login-form {
+  position: relative;
+  background-color: hsla(240, 0%, 100%, 0.9);
+  padding: 10vh 10vw;
+  
+  text-align: right;
+}
+
+.login-form>div {
+  text-align: left;
+  font-size: 18px;
+}
+
+.input-form {
+  margin: 5px 0 20px 0;
+  padding: 4px 10px;
+  border: 1px solid hsla(0, 0%, 10%, 1);
+  background-color: hsla(240, 0%, 100%, 0);
+  
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: hsl(0, 0%, 0%);
+  text-align: left;
+}
+
+.input-form:hover {
+  cursor: text;
+}
+
+.submit-input-form {
+  margin-top: 15px;
+  padding: 5px 10px;
+  border: 0 solid hsla(240, 0%, 100%, 0);
+  background-color: hsla(30, 100%, 55%, 0.9);
+  
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase ;
+}
+
+.submit-input-form:hover {
+  cursor: pointer;
+}
+
+#sign-up-button-a {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 10%, 0.99);
+  
+  font-size: 18px;
+  line-height: 100px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase ;
+}

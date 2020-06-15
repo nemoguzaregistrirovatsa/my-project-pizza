@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+    <title>Pizza App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+	  <link rel="shortcut icon" href="https://cdn.glitch.com/672d97f9-93aa-4751-99e9-65b1de06a2f2%2Fpizza_icon.ico?v=1591695408332" type="image/x-icon">
+	  <link rel="icon" href="https://cdn.glitch.com/672d97f9-93aa-4751-99e9-65b1de06a2f2%2Fpizza_icon.ico?v=1591695408332" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/info.css">
+    <script src="https://use.fontawesome.com/dff300a0f8.js" defer></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script type="text/javascript" src="/info.js" defer></script>
+    
+  </head>  
+  
+  <body id="menu-body">
+    
+    <nav id="main-nav">
+      <a href="/" id="pizza-button-a">P</a>
+      <div id="title-nav-div">Info</div>
+<!--       <a href="/login" id="log-in-button-a">Log in</a> -->
+    </nav>
+    
+    <main>
+      
+      <form id="info-form">
+
+        <div id="form-wrapper">
+          <div id="contacts-wrapper-div">
+            <div>
+              <div>Name:</div>
+              <input id="name-input" type="text" placeholder="" name="name" required class="input-info-form">
+            </div>
+            <div>
+              <div>Surname:</div>
+              <input id="surname-input" type="text" placeholder="" name="surname" required class="input-info-form">
+            </div>
+            <div id="number-wrapper-div">
+              <div>Number:</div>
+              <input id="number-input" type="text" placeholder="" name="number" required class="input-info-form">
+            </div>
+          </div>
+
+          <div id="delivery-wrapper-div">
+            <div>Region:</div>
+            <div id="delivery-buttons-wrapper-div">
+              <div id="first-delivery-div"><input id="delivery-first-input" type="radio" name="delivery" value="0" checked>Moscow</div>
+              <div id="second-delivery-div"><input id="delivery-second-input" type="radio" name="delivery" value="20">0-15 km</div>
+              <div id="third-delivery-div"><input id="delivery-third-input" type="radio" name="delivery" value="40">15-30 km</div>
+              <div id="forth-delivery-div"><input id="delivery-forth-input" type="radio" name="delivery" value="60">30-50 km</div>
+            </div>
+          </div>
+
+          <div id="address-wrapper">
+            <div>Address:</div>
+            <input id="address-input" type="text" placeholder="" name="address" required class="input-info-form">
+          </div>
+
+          <div id="comment-wrapper">
+            <div>Comment:</div>
+            <textarea id="comment-input" type="textarea" placeholder="" name="comment" class="input-info-form"></textarea>
+          </div>
+
+          <div id="payment-wrapper-div">
+            <div>Payment:</div>
+            <div id="payment-buttons-wrapper-div">
+              <div id="cash-payment-div"><input id="payment-cash-input" type="radio" name="payment" value="Cash" checked>Cash</div>
+              <div id="card-payment-div"><input id="payment-card-input" type="radio" name="payment" value="Card">Card</div>
+            </div>
+          </div>
+        
+          <div id="delivery-div">Delivery: 0$/<br>0&#8364;</div>
+        </div>
+
+        <div id="order-button-wrapper-div">
+          <a href="/cart" id="back-button-a">Back</a>
+          <input type="submit" id="order-button-input" value="Done">
+        </div>
+      </form>
+        
+    </main>
+    
+  </body>
+  
+</html>
